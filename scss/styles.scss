@@ -1,0 +1,369 @@
+@import "colores";
+@import "fonts";
+
+@mixin cajas{
+  background-color: $bgColor;
+}
+
+@mixin footer{
+  background-color:$bgFooter;
+  justify-self: center;
+  text-align: center;
+  width: 50%;
+  padding: 50px;
+  font-size: 24px;
+}
+
+*{
+    margin: 0;
+    padding-right: 0%;
+    box-sizing: content-box;
+  }
+  ::selection { background:rgba(54, 54, 54, 0.664); color:rgb(255, 255, 255); }
+  
+  header{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color:$navColor;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{    
+    list-style: none;
+    color: $aColor;
+    font-family: $estiloTit;
+    font-size: 24px;
+    margin: 20px;
+    display: inline-block;
+    align-self: center;
+
+  }
+  
+  a{
+    color: $aColor;
+    text-decoration: none;
+  }
+
+  .principal{
+    background: rgb(9,9,9);
+    background: linear-gradient(180deg, rgba(9,9,9,1) 0%, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 29%, rgba(60,60,60,1) 100%);
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+  .caja1{
+    padding-bottom: 169px;
+    color: white;
+    text-align: center;
+    font-family: $estiloTit;
+
+  }
+  
+  .caja2{
+    text-align: center;
+    padding-top: 110px;
+
+    img {
+        border-radius: 200px;
+    }
+  }
+  
+  
+  h1{
+    font-size: 100px;
+    text-align: Center;
+    font: $estiloTit;
+  }
+  
+  .us{
+    background-image: url(../img/fondo1.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  
+  .titulo{
+    flex-basis: 300%;
+    text-align: center;
+    color: $colorTit;
+    font-family: $estiloTit;
+    font-size: 100px;
+  }
+  
+  .texto{
+    margin: 10px;
+    padding: 60px 35px 60px 35px;
+    border-radius: 15px;
+    border: solid 1px #2c2c2c;
+    font-family: $estiloP;
+    font-weight: bolder;
+    text-align: center;
+    @include cajas;
+  }
+  
+  .catalogo{
+    font-family: $estiloP;
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 60px;
+    padding: 50px 80px 50px 80px;
+    @include cajas;
+  
+  }
+  
+  .footer{
+    height: 100vh;
+    background-image: url(../img/footer.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+  footer{
+    background-image: linear-gradient(#c31432,#240b36);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: center;   
+  }
+  .redes{
+    padding: 10px;
+  }
+  
+  
+  .icons{
+    @include cajas;
+    padding: 60px 35px 60px 35px;
+    flex-basis: 100%;
+    margin: 90px 100px 80px 100px;
+    border-radius: 15px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+     "tittle tittle tittle"
+     "maps wpp ig";
+    gap:35px
+  }
+  
+  .tittle{
+    grid-area: tittle;
+    width: 100%;
+    height: 60px;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    color: $colorTit;
+    font-family: $estiloTit;
+    color: #2c2c2c;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+  
+  .maps{
+    grid-area: maps;
+    background-color:$bgFooter;
+    font-family: $estiloP;
+    @include footer;
+  }
+  
+  .wpp{
+    grid-area: wpp;
+    background-color:$bgFooter;
+    font-family: $estiloP;
+    @include footer;
+  }
+  
+  .ig{
+    grid-area: ig;
+    background-color:$bgFooter;
+    font-family: $estiloP;
+    @include footer;
+  }
+  
+  .portfolio{
+    background-image: url(../img/port.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .clase1{
+    background-image: url(../img/fondo4.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+  
+  .estilo1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "nombre nombre nombre nombre"
+    "foto1 foto2 foto3 foto4"
+    "text text text text";
+    gap: 15px;
+  }
+  
+  .nombre{
+    grid-area: nombre;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-family: $estiloTit;
+    font-size: 80px;
+    height: 50px; 
+    color: $colorTit;
+    font-weight: bolder;
+  }
+  
+  .foto1{
+    grid-area: foto1;
+    justify-self: center;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding-top: 15px;
+    transition: all 2s;
+  }
+  
+  .foto2{
+    grid-area: foto2;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    height: 350px;
+    padding-top: 15px;
+    transition: all 2s;
+  }
+  
+  .foto3{
+    grid-area: foto3;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    padding-top: 15px;
+    transition: all 2s;
+  }
+  
+  .foto4{
+    grid-area: foto4;
+    justify-self: center;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding-top: 15px;
+    transition: all 2s;
+  }
+  
+  .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover{
+    width: 340px;
+    height: 380px;
+  }
+  
+  .text{
+    grid-area: text;
+    text-align: center;
+    padding: 40px 30px 20px 30px;
+    margin: 5px 100px 20px 100px;
+    border-radius: 40px;
+    font-family: $estiloP;
+    font-weight: bolder;
+    @include cajas;
+  }
+  
+  .cuadrados{
+    justify-self: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .turnos{
+    background-image: url(../img/turnos.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parrafo{
+    background-color: $bgColor;
+    font-family: 'Biryani', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;   
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  
+  .tabla{
+    background-image: url(../img/hand.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Biryani', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .formulario{
+    background-color: $bgColor;
+    width: 500px;
+    margin-top: 50px;
+    padding-top: 60px;
+    line-height: 30px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .icons{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+         "tittle"
+         "maps"
+         "wpp"
+         "ig";
+        gap:35px
+    }
+  }

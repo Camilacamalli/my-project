@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina para solicitar turnos para tatuajes">
+    <meta name="keywords" content="Tatuajes, tattoo, oldschool, neotradicional, puntillismo, microrealismo">  
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Turnos Studio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../index.html">About Us</a>
+                </li>
+                <li>
+                    <a href="../secundarias/portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="../secundarias/turnos.html">Turnos</a>
+                </li>
+                <li>
+                    <a href="#footer">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+        
+        <div class="turnos">
+            <h2 class="titulo animate__animated animate__backInUp">TURNOS</h2>
+            <p class="parrafo">Si estas interesade en hacerte un nuevo tattoo, esta seccion es para vos. 
+                Llena el formulario, completando tus datos, elegi la opcion del estilo de tatuaje (los podes ver en la seccion "portfolio") y completa el campo de texto describiendo el tatuaje que te gustaria hacerte, comentando los centimetros de dimension, el lugar del cuerpo donde te gustaria hacerlo, y la idea del dibujo. 
+                Una vez enviado el formulario, nos comunicamos con vos via mail para empezar el proceso de diseño y apuntarte un turno segun la disponibilidad del Studio. 
+            </p>
+        </div>
+        
+        <div class="tabla">
+            <form class="formulario" action="">
+                <h3>Completa tu formulario</h3>
+                <input type="text" name="nombre"placeholder="Escribe tu nombre" maxlength="20" required> <br><br>
+                <input type="text" name="apellido"placeholder="Escribe tu apellido" maxlength="20" required> <br><br>
+                <input type="email" name="email" placeholder="Escribe tu email" required> <br><br>
+            <div>
+                <p>Edad:
+                <input type="radio" name="edad" value="menor"> Menor
+                <input type="radio" name="edad" value="adulto" required> Adulto
+                </p>
+                <label for="estilo">Estilo de tatuaje</label>
+                <select name="estilo">
+                    <option value="oldschool">Oldschool</option>
+                    <option value="neotradicional">Neotradicional</option>
+                    <option value="realismo">Realismo</option>
+                    <option value="lettering">Lettering</option>
+                    <option value="blackwork">Blackwork</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="comentarios">Agregar descripcion del tatuaje</label> <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Limpiar formulario">
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div>
+            <a href="https://www.google.com.ar/maps" target="blank">
+            <img class="redes" src="../img/map.png" alt="maps" width="50px"> </a>
+            <a href="https://web.whatsapp.com/" target="blank">
+            <img class="redes" src="../img/whatsapp.png" alt="wpp" width="50px"> </a>
+            <a href="https://www.instagram.com/" target="blank">
+            <img class="redes" src="../img/instagram.png" alt="ig" width="50px"> </a>
+        </div>        
+    </footer>
+
+</body>
+</html>
