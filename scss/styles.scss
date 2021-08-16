@@ -39,6 +39,7 @@
     font-family: $estiloTit;
     font-size: 24px;
     margin: 20px;
+    margin-top: 30px;
     display: inline-block;
     align-self: center;
 
@@ -50,11 +51,11 @@
   }
 
   .principal{
-    background: rgb(9,9,9);
-    background: linear-gradient(180deg, rgba(9,9,9,1) 0%, rgba(9,9,9,1) 0%, rgba(0,0,0,1) 29%, rgba(60,60,60,1) 100%);
+    background-image:url(../img/inicio.jpg);
     height: 100vh;
     background-size: 100%;
     background-attachment: fixed;
+    background-position: bottom;
   }
   
   .caja1{
@@ -105,17 +106,19 @@
   .texto{
     margin: 10px;
     padding: 60px 35px 60px 35px;
-    border-radius: 15px;
-    border: solid 1px #2c2c2c;
+    /*border-radius: 15px;*/
     font-family: $estiloP;
-    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: lighter;
     text-align: center;
     @include cajas;
   }
   
   .catalogo{
     font-family: $estiloP;
-    font-weight: bolder;
+    color: white;
+    font-weight:lighter;
     text-align: center;
     margin-right: 60px;
     padding: 50px 80px 50px 80px;
@@ -151,7 +154,6 @@
     padding: 60px 35px 60px 35px;
     flex-basis: 100%;
     margin: 90px 100px 80px 100px;
-    border-radius: 15px;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -224,7 +226,7 @@
   
   .estilo1{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
     "nombre nombre nombre nombre"
@@ -240,10 +242,10 @@
     text-align: center;
     padding-top: 50px;
     font-family: $estiloTit;
-    font-size: 80px;
+    font-size: 100px;
     height: 50px; 
     color: $colorTit;
-    font-weight: bolder;
+    font-weight: lighter;
   }
   
   .foto1{
@@ -253,7 +255,6 @@
     width: 300px;
     height: 350px;
     padding-top: 15px;
-    transition: all 2s;
   }
   
   .foto2{
@@ -261,9 +262,9 @@
     justify-self: center;
     text-align: center;
     align-self: center;
+    width: 300px;
     height: 350px;
     padding-top: 15px;
-    transition: all 2s;
   }
   
   .foto3{
@@ -271,10 +272,9 @@
     justify-self: center;
     text-align: center;
     justify-content: center;
-    width: 350px;
+    width: 300px;
     height: 350px;
     padding-top: 15px;
-    transition: all 2s;
   }
   
   .foto4{
@@ -284,29 +284,24 @@
     width: 300px;
     height: 350px;
     padding-top: 15px;
-    transition: all 2s;
   }
-  
-  .foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover{
-    width: 340px;
-    height: 380px;
-  }
-  
+
   .text{
     grid-area: text;
     text-align: center;
+    color: white;
     padding: 40px 30px 20px 30px;
     margin: 5px 100px 20px 100px;
-    border-radius: 40px;
     font-family: $estiloP;
-    font-weight: bolder;
+    font-weight: lighter;
     @include cajas;
   }
   
   .cuadrados{
     justify-self: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding: 5px;
   }
   
   .turnos{
@@ -324,12 +319,12 @@
   
   .parrafo{
     background-color: $bgColor;
+    color: white;
     font-family: 'Biryani', sans-serif;
-    font-weight: bolder;
+    font-weight: lighter;
     font-size: 15px;   
     padding: 20px;
     margin: 20px;
-    border-radius: 50px;
     text-align: center;
   }
   
